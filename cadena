@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+  char nombre[80], copia[80];
+  int i=0, j=0;
+  printf("dame tu nombre");
+  gets("nombre");
+  for(i=0;nombre[i] != '/0'; i++);
+  for(j=0;nombre[j] != '/0'; j++)
+  {
+    copia[j] = nombre[i];
+    i--;
+  }
+  printf("el nombre al revez es %s", copia);
+  return 0;
+}
